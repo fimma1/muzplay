@@ -87,29 +87,35 @@ h3 {
 .player-controls {
   position: relative;
   top: -15px;
-  left: 120px;
+  left: 90px;
   width: 200px;
 }
 
 .fas {
   font-size: 30px;
-  color: rgb(129, 129, 129);
-  margin-right: 30px;
+  color: rgb(63, 54, 54);
+  margin-right: 25px;
+  cursor: pointer;
+  user-select: none;
+}
 
+.fas:hover {
+  filter: brightness(55%);
+  color: aqua;
 }
 
 
-
 .main-button {
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
   top: 3px;
+  
 }
 
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
   .player-container{
-    width: 95vw;
+    width: 95vw;  
   }
 
 
