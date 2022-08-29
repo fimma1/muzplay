@@ -66,5 +66,36 @@
     image.src = `img/${song.name}.jpg`;
   }
 
+  // Current Song
+  let songIndex = 0;
+
+  // Prev Song
+  function prevSong() {
+    songIndex--;
+    if (songIndex < 0) {
+      songIndex = songs.length -1;
+    }
+    console.log(songIndex);
+    loadSong(songs[songIndex]);
+    playSong();
+  }
+
+  //Next song
+  function nextSong() {
+    songIndex++;
+    if (songIndex > songs.length -1 ) {
+      songIndex = 0;
+   }
+    console.log(songIndex);
+    loadSong(songs[songIndex]);
+    playSong();
+  }
+
 // On load select song
-loadSong(songs[4]);
+loadSong(songs[songIndex]);
+
+
+//Event Listeners
+prevBtn.addEventListener('click', prevSong);
+nextBtn.addEventListener('click', nextSong);
+
