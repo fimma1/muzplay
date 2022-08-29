@@ -67,7 +67,7 @@
   }
 
   // Current Song
-  let songIndex = 0;
+  let songIndex = 4;
 
   // Prev Song
   function prevSong() {
